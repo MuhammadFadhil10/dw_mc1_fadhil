@@ -16,9 +16,9 @@ const CardList = () => {
 				<div>
 					<img src={item.image} alt='profile' className={Style.profile}></img>
 				</div>
-				<div>
-					<h3>{item.username}</h3>
-					<h3>Followers: {item.follower}</h3>
+				<div className='d-flex flex-column align-items-start '>
+					<h3 className='text-light fs-4'>{item.username}</h3>
+					<h3 className='text-light fs-6'>Followers: {item.follower}</h3>
 				</div>
 			</div>
 		);
